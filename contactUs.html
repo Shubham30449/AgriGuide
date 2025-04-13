@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with AgriGuide for inquiries, support, or feedback.">
+    <meta name="keywords" content="AgriGuide, Contact Us, Support, Feedback">
+    <meta name="author" content="Your Name">
+    <title>Contact Us - AgriGuide</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .contact-container h2 {
+            font-size: 2.5rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .contact-form, .contact-details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form h3, .contact-details h3 {
+            font-size: 1.5rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+
+        .contact-details p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-details a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>AgriGuide</h1>
+        </header>
+
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Our Contact Information</h3>
+            <p>
+                <strong>Address:</strong> 123 ManSarovar Lane, Bhiwandi City, India<br>
+                <strong>Phone:</strong> <a href="tel:+911234567890">+91 123 456 7890</a><br>
+                <strong>Email:</strong> <a href="mailto:agriguide91@gmail.com">agriguide91@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AgriGuide. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Example: Display form data (You can replace this with an actual backend request)
+            alert(`Thank you, ${name}! Your message has been received.`);
+            
+            // Reset the form
+            document.getElementById('contactForm').reset();
+        }
+    </script> -->
+
+<script src="./Assets/Javascript/auth.js"></script>
+    <script src="./Assets/Javascript/contact.js"></script>
+</body>
+</html>

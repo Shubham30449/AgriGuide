@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGuide Dashboard</title>
+    <link rel="stylesheet" href="./Assets/dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to AgriGuide Dashboard</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <div class="container">
+        <div class="cards">
+            <div class="card" onclick="location.href='soil_parameters.html'">
+                <img src="Assets/Images/Agriculture.jpg" alt="Soil Parameters">
+                <div class="card-title">Go with Soil Parameters</div>
+            </div>
+
+            <div class="card" onclick="location.href='desired_crop.html'">
+                <img src="Assets/Images/DesiredCrop.jpg" alt="Desired Crops">
+                <div class="card-title">Go with Desired Crops</div>
+            </div>
+
+            <div class="card" onclick="location.href='best_farming_practices.html'">
+                <img src="Assets/Images/BestPractices.jpg" alt="Farming Practices">
+                <div class="card-title">Best Farming Practices</div>
+            </div>
+
+            <div class="card" onclick="location.href='location.html'">
+                <img src="Assets/Images/FarmingLocation.jpeg" alt="Location">
+                <div class="card-title">Go with Location</div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2025 AgriGuide. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="./Assets/Javascript/auth.js"></script>
+</body>
+</html>

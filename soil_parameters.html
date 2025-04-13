@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgriGuide - Enter soil parameters to get crop recommendations">
+    <meta name="keywords" content="AgriGuide, Soil Parameters, Crop Recommendations, Farming">
+    <meta name="author" content="AgriGuide Team">
+    <title>Soil Parameters | AgriGuide</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header with Logout Button -->
+    <header>
+        <h1>Soil Parameters</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+        <section class="content">
+            <p>Select the soil parameters to get suitable crop recommendations.</p>
+
+            <form id="soilForm">
+                <div class="input-group">
+                    <label for="temperature">Temperature (°C):</label>
+                    <select id="temperature" name="temperature" required>
+                        <option value="">Select Temperature</option>
+                        <option value="Below 10">Below 10°C</option>
+                        <option value="10-20">10-20°C</option>
+                        <option value="20-30">20-30°C</option>
+                        <option value="30-40">30-40°C</option>
+                        <option value="Above 40">Above 40°C</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="humidity">Humidity (%):</label>
+                    <select id="humidity" name="humidity" required>
+                        <option value="">Select Humidity</option>
+                        <option value="Below 30">Below 30%</option>
+                        <option value="30-50">30-50%</option>
+                        <option value="50-70">50-70%</option>
+                        <option value="Above 70">Above 70%</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="soilPh">Soil pH Level:</label>
+                    <select id="soilPh" name="soilPh" required>
+                        <option value="">Select Soil pH</option>
+                        <option value="Below 4.5">Below 4.5 (Highly Acidic)</option>
+                        <option value="4.5-5.5">4.5-5.5 (Moderately Acidic)</option>
+                        <option value="5.5-6.5">5.5-6.5 (Slightly Acidic)</option>
+                        <option value="6.5-7.5">6.5-7.5 (Neutral)</option>
+                        <option value="7.5-8.5">7.5-8.5 (Slightly Alkaline)</option>
+                        <option value="Above 8.5">Above 8.5 (Highly Alkaline)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="nitrogen">Nitrogen (N) %: (Optional)</label>
+                    <select id="nitrogen" name="nitrogen">
+                        <option value="">Select Nitrogen Level</option>
+                        <option value="0-0.5">0-0.5%</option>
+                        <option value="0.5-1">0.5-1%</option>
+                        <option value="1-1.5">1-1.5%</option>
+                        <option value="Above 1.5">Above 1.5%</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="phosphorus">Phosphorus (P) %: (Optional)</label>
+                    <select id="phosphorus" name="phosphorus">
+                        <option value="">Select Phosphorus Level</option>
+                        <option value="0-0.2">0-0.2%</option>
+                        <option value="0.2-0.5">0.2-0.5%</option>
+                        <option value="0.5-1">0.5-1%</option>
+                        <option value="Above 1">Above 1%</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="potassium">Potassium (K) %: (Optional)</label>
+                    <select id="potassium" name="potassium">
+                        <option value="">Select Potassium Level</option>
+                        <option value="0-0.3">0-0.3%</option>
+                        <option value="0.3-0.6">0.3-0.6%</option>
+                        <option value="0.6-1">0.6-1%</option>
+                        <option value="Above 1">Above 1%</option>
+                    </select>
+                </div>
+
+                <button type="submit">Get Crop Recommendations</button>
+            </form>
+
+            <div id="cropRecommendations"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 AgriGuide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./Assets/Javascript/soil_parameters.js"></script>
+    <script src="./Assets/Javascript/auth.js"></script>
+</body>
+</html>
